@@ -3,13 +3,15 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Dosis', sans-serif;
   background-color: #eee;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 /*Header*/
@@ -25,7 +27,7 @@ body > header {
 }
 
 .header--logo > span {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .header--title {
@@ -34,10 +36,10 @@ body > header {
 }
 
 .header--title > h1 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-variant: small-caps;
   font-weight: lighter;
-  font-size: 2em;
+  font-size: 2.2em;
   color: crimson;
 }
 
@@ -50,7 +52,9 @@ body > header {
 main {
   display: flex;
   flex-direction: column;
-  margin: 10px 0;
+  margin: 0 0 10px 0;
+  padding: 10px 0;
+  border-bottom: 3px solid crimson;
 }
 
 /*Main image*/
@@ -60,4 +64,55 @@ main {
 
 .main-image > img {
   width: 100%;
+}
+
+/*Featured Works*/
+.featured-works {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-works--title {
+  text-align: center;
+  color: crimson;
+}
+
+.featured-works--projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 300px;
+  margin-top: 10px;
+}
+
+.project--figure {
+  margin: 0;
+}
+
+.project--figure > img {
+  width: 100%;
+}
+
+.project--caption {
+  text-align: center;
+}
+
+.project--caption > h3 {
+  text-transform: uppercase;
+}
+
+.project--caption > a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8em;
+}
+
+/*Footer*/
+body > footer {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
