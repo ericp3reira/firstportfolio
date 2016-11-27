@@ -2,18 +2,19 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Eric Pereira</title>
+    <title>Eric Pereira - Front-End Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Vendor -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Raleway:300,400" rel="stylesheet">
     <!-- Custom -->
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Raleway:300,400" rel="stylesheet">
   </head>
   <body>
     <header>
       <div class="header--logo">
-        <i class="fa fa-superpowers fa-5x" aria-hidden="true"></i>
+        <i class="fa fa-superpowers fa-3x" aria-hidden="true"></i>
         <span>{...}</span>
       </div>
       <div class="header--title">
@@ -24,7 +25,7 @@
     <main>
       <!-- Main Image -->
       <figure class="main-image">
-
+        <div class="delayed-image-load" data-src="./img/mainimage-{width}{pixel_ratio}.png" data-alt="alternative text"></div>
       </figure>
       <!-- Featured Works -->
       <section class="featured-works">
@@ -69,5 +70,17 @@
     <footer>
       <p>by Eric Pereira © 2016</p>
     </footer>
+    <!-- Javascript -->
+    <script src="js/Imager.min.js"></script>
+    <script>
+      new Imager({
+        availableWidths: {
+          320: 'sm',
+          640: 'md',
+          960: 'lg'
+        },
+        availablePixelRatios: [1, 2]
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,5 @@
+node_modules
+img_src
+package.json
+Gruntfile.js
+yarn.lock

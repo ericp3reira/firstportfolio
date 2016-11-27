@@ -1,4 +1,4 @@
-/*Page styles*/
+/*Page*/
 * {
   box-sizing: border-box;
 }
@@ -12,11 +12,11 @@ body {
   background-color: #eee;
 }
 
-/*Header styles*/
+/*Header*/
 body > header {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
   border-bottom: 3px solid crimson;
 }
 
@@ -25,7 +25,7 @@ body > header {
 }
 
 .header--logo > span {
-  font-size: 5em;
+  font-size: 3em;
 }
 
 .header--title {
@@ -37,11 +37,27 @@ body > header {
   font-family: 'Lato', sans-serif;
   font-variant: small-caps;
   font-weight: lighter;
-  font-size: 4em;
+  font-size: 2em;
   color: crimson;
 }
 
 .header--title > h2 {
-  font-size: 2em;
+  font-size: 1em;
   text-transform: uppercase;
+}
+
+/*Main*/
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+/*Main image*/
+.main-image {
+  margin: 0 0 10px 0;
+}
+
+.main-image > img {
+  width: 100%;
 }
