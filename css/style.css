@@ -1,0 +1,47 @@
+/*Page styles*/
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #eee;
+}
+
+/*Header styles*/
+body > header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 3px solid crimson;
+}
+
+.header--logo {
+  flex: 1 0 0;
+}
+
+.header--logo > span {
+  font-size: 5em;
+}
+
+.header--title {
+  flex: 2 0 0;
+  text-align: right;
+}
+
+.header--title > h1 {
+  font-family: 'Lato', sans-serif;
+  font-variant: small-caps;
+  font-weight: lighter;
+  font-size: 4em;
+  color: crimson;
+}
+
+.header--title > h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
