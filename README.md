@@ -1,11 +1,12 @@
 #First Portfolio Website
 
-My first portfolio website, following Udacity's Build a Portfolio Site project.
+My first responsive portfolio website, following Udacity's Build a Portfolio Site project.
 
 ##Technologies
 
 - HTML5
 - CSS3
+  - FLexbox
   - Normalize.css
   - Font Awesome
   - Google Fonts
