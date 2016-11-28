@@ -1,3 +1,12 @@
+/*Modals*/
+.project-modal > figure {
+  margin: 0;
+}
+
+.project-modal > figure > img {
+  width: 100%;
+}
+
 /*Page*/
 * {
   box-sizing: border-box;
@@ -12,6 +21,11 @@ body {
   background-color: #eee;
   max-width: 960px;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 /*Header*/
@@ -104,10 +118,8 @@ main {
   text-transform: uppercase;
 }
 
-.project--caption > a {
-  text-decoration: none;
-  color: black;
-  font-size: 0.8em;
+.project--caption > p {
+  font-size: 0.9em;
 }
 
 /*Footer*/

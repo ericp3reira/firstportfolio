@@ -5,11 +5,12 @@
     <title>Eric Pereira - Front-End Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Vendor -->
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Dosis:400,600|Raleway:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,600%7CRaleway:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.modal.min.css">
     <!-- Custom -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
@@ -31,33 +32,67 @@
       <section class="featured-works">
         <h2 class="featured-works--title">Featured Works</h2>
         <div class="featured-works--projects">
-          <article class="project">
-            <figure class="project--figure">
-              <div class="delayed-image-load" data-src="./img/project1-{width}{pixel_ratio}.png" data-alt="alternative text"></div>
-              <figcaption class="project--caption">
+          <!-- Modals: HTML and CSS has to be embedded directly into document -->
+          <div id="project1-modal" class="project-modal" style="display:none;">
+            <figure>
+              <div class="delayed-image-load" data-src="./img/project1-{width}{pixel_ratio}.png" data-alt="First project"></div>
+              <figcaption>
                 <h3>Project 1</h3>
-                <a href="#">https://github.com/ericp3reira/project1</a>
+                <p>HTML5, CSS3, JS</p>
               </figcaption>
             </figure>
-          </article>
-          <article class="project">
-            <figure class="project--figure">
-              <div class="delayed-image-load" data-src="./img/project2-{width}{pixel_ratio}.png" data-alt="alternative text"></div>
-              <figcaption class="project--caption">
+          </div>
+          <div id="project2-modal" class="project-modal" style="display:none;">
+            <figure>
+              <div class="delayed-image-load" data-src="./img/project2-{width}{pixel_ratio}.png" data-alt="Second project"></div>
+              <figcaption>
                 <h3>Project 2</h3>
-                <a href="#">https://github.com/ericp3reira/project2</a>
+                <p>HTML5, CSS3, JS</p>
               </figcaption>
             </figure>
-          </article>
-          <article class="project">
-            <figure class="project--figure">
-              <div class="delayed-image-load" data-src="./img/project3-{width}{pixel_ratio}.png" data-alt="alternative text"></div>
-              <figcaption class="project--caption">
+          </div>
+          <div id="project3-modal" class="project-modal" style="display:none;">
+            <figure>
+              <div class="delayed-image-load" data-src="./img/project3-{width}{pixel_ratio}.png" data-alt="Third project"></div>
+              <figcaption>
                 <h3>Project 3</h3>
-                <a href="#">https://github.com/ericp3reira/project3</a>
+                <p>HTML5, CSS3, JS</p>
               </figcaption>
             </figure>
-          </article>
+          </div>
+          <a href="#project1-modal" rel="modal:open">
+            <article class="project">
+              <figure class="project--figure">
+                <div class="delayed-image-load" data-src="./img/project1-{width}{pixel_ratio}.png" data-alt="First project"></div>
+                <figcaption class="project--caption">
+                  <h3>Project 1</h3>
+                  <p>https://github.com/ericp3reira/project1</p>
+                </figcaption>
+              </figure>
+            </article>
+          </a>
+          <a href="#project2-modal" rel="modal:open">
+            <article class="project">
+              <figure class="project--figure">
+                <div class="delayed-image-load" data-src="./img/project2-{width}{pixel_ratio}.png" data-alt="Second project"></div>
+                <figcaption class="project--caption">
+                  <h3>Project 2</h3>
+                  <p>https://github.com/ericp3reira/project1</p>
+                </figcaption>
+              </figure>
+            </article>
+          </a>
+          <a href="#project3-modal" rel="modal:open">
+            <article class="project">
+              <figure class="project--figure">
+                <div class="delayed-image-load" data-src="./img/project3-{width}{pixel_ratio}.png" data-alt="Third project"></div>
+                <figcaption class="project--caption">
+                  <h3>Project 3</h3>
+                  <p>https://github.com/ericp3reira/project1</p>
+                </figcaption>
+              </figure>
+            </article>
+          </a>
         </div>
       </section>
     </main>
@@ -65,6 +100,8 @@
       <p>Eric Pereira © 2016</p>
     </footer>
     <!-- Javascript -->
+    <script src="js/jquery-3.1.1.slim.min.js"></script>
+    <script src="js/jquery.modal.min.js"></script>
     <script src="js/Imager.min.js"></script>
     <script>
       new Imager({
